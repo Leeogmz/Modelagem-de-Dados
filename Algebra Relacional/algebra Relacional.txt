@@ -1,0 +1,4 @@
+σ nome_livro  == 'Percy Jackson e o Ladrao de Raios' (livros) 
+σ nome_livro  == 'Percy Jackson e o Ladrao de Raios' or nome_livro == 'Sangue de Lobo' (livros)
+π nome_livro, preco, qtd_estoque (livros)
+π nome_livro, qtd_estoque (σ qtd_estoque >= 5 (livros))
