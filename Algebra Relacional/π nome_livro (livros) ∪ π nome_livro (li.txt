@@ -1,0 +1,7 @@
+π nome_livro (livros) ∪ π nome_livro (livros_novo)
+livros_estoque = π nome_livro (livros) ∪ π nome_livro (livros_novo)
+livros_estoque ∩ π nome_livro (vendas)
+livros_estoque -π nome_livro (vendas)
+maior_30 = σ preco >= 30 (livros)
+maior_30 = σ preco >= 30 (π nome_livro, preco (livros))
+maior_30 = σ preco >= 30 (π nome_livro, preco (livros)) ∪ π nome_livro, preco (livros_novo)
